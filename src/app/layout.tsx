@@ -5,11 +5,35 @@ import SmoothScroll from "@/core/smooth-scroll";
 import { CSPostHogProvider } from "./_analytics/provider";
 import { CookieBanner } from "@/components/ui-david/cookie-banner";
 import TopNavigationLogo from "@/components/ui-david/top-navigation-logo";
+import { configuration } from "@/configuration";
 
 export const metadata: Metadata = {
-  title: "David Slaninka • Full-Stack Engineer • Web Development",
-  description:
-    "I'm a full-stack engineer focused on creating efficient and visually appealing websites and web applications. My work includes front-end and back-end development, data engineering, AI integration, and 3D implementation.",
+  title: configuration.site.title,
+  description: configuration.site.description,
+  openGraph: {
+    url: configuration.site.baseUrl,
+    siteName: configuration.site.title,
+    description: configuration.site.description,
+    images: [
+      {
+        url: `${configuration.site.baseUrl}/images/ds-opengraph-banner.webp"`,
+        alt: "david slaninka banner full-stack engineer web development",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: configuration.site.title,
+    description: configuration.site.description,
+    creator: configuration.twitter.username,
+    site: configuration.twitter.username,
+    images: [
+      {
+        url: `${configuration.site.baseUrl}/images/ds-opengraph-banner.webp"`,
+        alt: "david slaninka banner full-stack engineer web development",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({

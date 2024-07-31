@@ -1,10 +1,11 @@
 import { MetadataRoute } from "next";
+import { configuration } from "@/configuration";
 
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
       userAgent: "*",
     },
-    sitemap: "https://davidslaninka.dev/sitemap.xml",
+    sitemap: `${configuration.site.baseUrl}/sitemap.xml`,
   };
 }
