@@ -1,0 +1,15 @@
+version: '3.1'
+
+services:
+
+  portfolio-web:
+    build: .
+    image: portfolio-web:latest
+    restart: always
+    ports:
+      - 4002:3000
+    container_name: portfolio-web
+    hostname: portfolio-web
+    # env_file:
+    #   - .env.production
+

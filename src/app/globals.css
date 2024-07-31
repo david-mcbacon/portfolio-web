@@ -1,0 +1,55 @@
+@tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+  @layer base {
+    .dark {
+      --background: 0 0% 7%;
+      --foreground: 0 0% 91%;
+
+      --card: 0 0% 3.9%;
+      --card-foreground: 0 0% 91%;
+
+      --popover: 0 0% 3.9%;
+      --popover-foreground: 0 0% 91%;
+
+      --primary: 18 88% 52%; /* f05a19 */
+      --primary-foreground: 0 0% 91%;
+
+      --secondary: 0 0% 67%; /* ababab */
+      --secondary-foreground: 0 0% 3%;
+
+      --muted: 0 0% 14.9%;
+      --muted-foreground: 0 0% 63.9%;
+
+      --accent: 0 0% 14.9%;
+      --accent-foreground: 0 0% 91%;
+
+      --destructive: 0 62.8% 30.6%;
+      --destructive-foreground: 0 0% 91%;
+
+      --border: 0 0% 14.9%;
+      --input: 0 0% 14.9%;
+      --ring: 0 0% 83.1%;
+    }
+  }
+
+  @layer base {
+    * {
+      @apply border-border;
+    }
+    body {
+      @apply bg-background text-foreground;
+    }
+  }
+
+/* For Webkit-based browsers (Chrome, Safari and Opera) */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* For IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
