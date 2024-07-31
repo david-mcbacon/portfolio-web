@@ -13,7 +13,7 @@ Welcome to my portfolio website repository! This project showcases my skills and
 - **Frontend**: Next.js, Tailwind CSS
 - **Languages**: TypeScript
 - **Analytics**: PostHog
-- **Animations**: Frame Motion
+- **Animations**: Framer Motion
 - **3D Graphics**: React Three Fiber, React Three Drei
 
 ## Setup & Installation
