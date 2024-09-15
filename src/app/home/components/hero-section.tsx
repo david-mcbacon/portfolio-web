@@ -2,10 +2,19 @@ import React from "react";
 import ButtonPrimary from "@/components/ui-david/button-primary";
 import { FaXTwitter, FaGithub, FaLinkedin } from "react-icons/fa6";
 import HeroSectionImages from "./hero-section-images";
+import GridSvgNew from "@/components/ui-david/grid-svg-new";
 
 const HeroSection = () => {
   return (
     <section className="relative h-fit min-h-screen w-full">
+      <div className="absolute left-0 top-[50%] z-[-1] h-full w-full lg:left-[20%] lg:top-0">
+        <div
+          className="h-full w-full"
+          style={{
+            background: `radial-gradient(circle, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0) 50%)`,
+          }}
+        ></div>
+      </div>
       <div className="pointer-events-none absolute left-[50%] top-[44%] z-10 flex h-fit w-full max-w-[800px] -translate-x-1/2 -translate-y-1/2 flex-col items-start justify-center text-center lg:left-[43.5%] lg:top-1/2 lg:text-left xl:left-[42%]">
         <Headlines />
       </div>
