@@ -126,7 +126,6 @@ const PROJECTS: Project[] = [
   },
   {
     title: "Bachoff Studio",
-    badge: "In Progress",
     type: "Website, Digital Products",
     description:
       "I built a custom website for Bachoff Studio, integrating dynamic animations and 3D features. It also has MDX blog functionality and a Framer component library. This project has ongoing additions and refinements to the digital products.",
@@ -136,10 +135,10 @@ const PROJECTS: Project[] = [
         title: "Bachoff Studio",
         url: "https://bachoff.studio",
       },
-      // {
-      //   title: "Bachoff Framer",
-      //   url: "https://framer.bachoff.studio",
-      // },
+      {
+        title: "Bachoff Framer",
+        url: "https://framer.bachoff.studio",
+      },
     ],
   },
   {
