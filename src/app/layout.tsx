@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     description: configuration.site.description,
     images: [
       {
-        url: `${configuration.site.baseUrl}/images/ds-opengraph-banner.webp"`,
+        url: `${configuration.site.baseUrl}/images/ds-opengraph-banner.webp`,
         alt: "david slaninka banner full-stack engineer web development",
       },
     ],
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     site: configuration.twitter.username,
     images: [
       {
-        url: `${configuration.site.baseUrl}/images/ds-opengraph-banner.webp"`,
+        url: `${configuration.site.baseUrl}/images/ds-opengraph-banner.webp`,
         alt: "david slaninka banner full-stack engineer web development",
       },
     ],
