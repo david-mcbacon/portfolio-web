@@ -1,7 +1,6 @@
 import OrangeMacbookScene from "@/components/3d/orange-macbook-scene";
 import CollapsibleHoverTable from "@/components/ui-david/collapsible-hover-table";
 import CollapsibleHoverTableRow from "@/components/ui-david/collapsible-hover-table-row";
-import ParagraphOpacityScroll from "@/components/ui-david/paragraph-opacity-scroll";
 
 export default function RecentProjectsSection() {
   return (
@@ -44,19 +43,13 @@ function BeforeHoverContent(props: Project) {
     : props.type;
   return (
     <div className="flex h-full w-full flex-col items-start justify-center">
-      <ParagraphOpacityScroll
-        paragraphText={props.title}
-        paragraphClassName="font-primary text-2xl md:text-5xl font-extrabold uppercase tracking-wide"
-        wordClassName="mr-2"
-        scrollProgressOffset={["start 1", "start 0.9"]}
-      />
+      <p className="font-primary text-2xl font-extrabold uppercase tracking-wide text-foreground-600 md:text-5xl">
+        {props.title}
+      </p>
       <div className="flex items-center justify-start gap-3 pt-1">
-        <ParagraphOpacityScroll
-          paragraphText={infotext}
-          paragraphClassName="text-sm font-light italic text-foreground-800"
-          wordClassName="mr-1"
-          scrollProgressOffset={["start 1", "start 0.9"]}
-        />
+        <p className="text-sm font-light italic text-foreground-800">
+          {infotext}
+        </p>
         {props.badge && (
           <span className="flex-shrink-0 rounded-full bg-secondary-800 px-2 text-xs font-light italic">
             {props.badge}

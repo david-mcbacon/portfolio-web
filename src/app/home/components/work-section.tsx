@@ -1,7 +1,6 @@
 import CollapsibleHoverTable from "@/components/ui-david/collapsible-hover-table";
 import { Earth3dScene } from "@/components/3d/earth-scene";
 import CollapsibleHoverTableRow from "@/components/ui-david/collapsible-hover-table-row";
-import ParagraphOpacityScroll from "@/components/ui-david/paragraph-opacity-scroll";
 
 export default function WorkSection() {
   return (
@@ -41,11 +40,9 @@ function Rows() {
 function BeforeHoverContent({ title }: { title: string }) {
   return (
     <div className="flex h-full w-full flex-col items-start justify-center">
-      <ParagraphOpacityScroll
-        paragraphText={title}
-        paragraphClassName="font-primary text-5xl md:text-8xl font-extrabold uppercase tracking-wide"
-        scrollProgressOffset={["start 0.9", "start 0.8"]}
-      />
+      <p className="font-primary text-5xl font-extrabold uppercase tracking-wide text-foreground-600 md:text-8xl">
+        {title}
+      </p>
     </div>
   );
 }
