@@ -24,7 +24,7 @@ const TechStackSection = () => {
         />
       </div>
 
-      <div className="absolute bottom-[40%] right-5 z-[-1] rotate-[90deg] md:bottom-[45%] md:right-[20%] 2xl:bottom-[35%] 2xl:right-[15%]">
+      <div className="absolute bottom-[40%] right-5 z-[-1] rotate-[90deg] md:bottom-[35%] md:right-[20%] lg:bottom-[40%] xl:bottom-[33%] 2xl:bottom-[35%] 2xl:right-[15%] 3xl:right-[20%]">
         <TechStackScribbleSvg className="scale-[170%]" />
       </div>
       <div className="mt-20 xl:mt-28">
