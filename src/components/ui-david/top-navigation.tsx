@@ -9,13 +9,14 @@ export const NAV_LINKS: NavLinkProps[] = [
     label: "About",
   },
   {
-    id: "experience",
-    label: "Experience",
-  },
-  {
     id: "recent-projects",
     label: "Work",
   },
+  {
+    id: "experience",
+    label: "Experience",
+  },
+
   {
     id: "contact",
     label: "Contact",
