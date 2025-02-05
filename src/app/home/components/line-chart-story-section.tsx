@@ -18,7 +18,7 @@ const LineChartStorySection = () => {
   return (
     <section className="mx-auto flex w-full max-w-[1536px] flex-col gap-20 px-6 md:-mt-20 md:flex-row md:gap-6 md:px-14 lg:mt-0 lg:gap-10 xl:px-[13.5rem]">
       <div className="sticky top-0 flex h-screen w-full items-start justify-center md:top-0 md:w-[60%] md:items-center lg:w-2/3">
-        <div className="relative h-auto w-full bg-gradient-to-b from-background from-80% to-transparent pb-32 pt-12 md:w-[700px] md:pt-0">
+        <div className="relative h-auto w-full bg-gradient-to-b from-background from-80% to-transparent pb-12 pt-12 md:w-[700px] md:pt-0">
           <LineChart
             lines={lines}
             scrollYProgress={scrollYProgress}
