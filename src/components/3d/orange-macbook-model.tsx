@@ -128,7 +128,7 @@ export function Model({
             <Suspense
               fallback={<FallbackMaterial url="images/macbook-fallback.webp" />}
             >
-              <VideoMaterial url="3d/showcase.mp4" />
+              <VideoMaterial url="3d/output.mp4" />
             </Suspense>
           </mesh>
         </group>
