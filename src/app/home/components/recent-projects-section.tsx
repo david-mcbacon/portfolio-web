@@ -6,7 +6,7 @@ export default function RecentProjectsSection() {
   return (
     <section
       id="recent-projects"
-      className="relative flex w-full flex-col overflow-visible pt-10 md:overflow-hidden md:pt-20 xl:pt-40"
+      className="relative flex w-full flex-col overflow-visible md:overflow-hidden md:pt-40 xl:pt-40"
     >
       <CollapsibleHoverTable
         tableTitle="Recent Projects"

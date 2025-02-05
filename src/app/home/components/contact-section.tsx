@@ -7,7 +7,7 @@ const ContactSection = () => {
   return (
     <section
       id="contact"
-      className="relative z-20 mx-auto flex w-full max-w-[1536px] flex-col pb-10 pt-[450px] md:pb-32 md:pt-40"
+      className="relative z-20 mx-auto flex w-full max-w-[1536px] flex-col pb-10 md:pb-32 lg:pt-0"
     >
       <div className="space-y-6 px-6 md:px-14 xl:px-[13.5rem]">
         <Heading type={2}>Let&apos;s Connect</Heading>

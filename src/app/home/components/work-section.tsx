@@ -7,7 +7,7 @@ export default function WorkSection() {
     <section
       id="work"
       className={
-        "relative my-2 w-full md:mt-32 md:pb-20 xl:mb-14 xl:mt-32 2xl:mt-0 3xl:mt-40"
+        "relative my-8 w-full pt-14 md:-mt-40 md:pb-20 md:pt-0 lg:mt-0 lg:pb-40 xl:-mt-20 xl:mb-14 xl:pb-0"
       }
     >
       <CollapsibleHoverTable

@@ -7,7 +7,7 @@ import ExperienceScribbleSvg from "@/components/svg/experience-scribble";
 const ExperienceSection = () => {
   return (
     <section
-      className="relative mx-auto flex h-auto w-full max-w-[1536px] flex-col overflow-hidden px-6 py-40 md:px-14 xl:px-[13.5rem]"
+      className="relative mx-auto flex h-auto w-full max-w-[1536px] flex-col overflow-hidden px-6 pb-40 pt-[500px] md:px-14 md:pb-60 md:pt-60 xl:px-[13.5rem]"
       id="experience"
     >
       <div className="z-10 flex flex-col gap-6">
@@ -34,7 +34,7 @@ const ExperienceSection = () => {
           ))}
         </div>
       </div>
-      <div className="absolute -right-20 bottom-[25%] z-[-1] lg:right-[15%] xl:bottom-[10%]">
+      <div className="absolute -right-20 bottom-[25%] z-[-1] lg:right-[15%] xl:bottom-[20%]">
         <ExperienceScribbleSvg className="scale-[70%] md:scale-[100%]" />
       </div>
     </section>

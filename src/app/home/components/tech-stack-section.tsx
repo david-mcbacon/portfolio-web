@@ -7,7 +7,7 @@ import TechStackParallax from "./tech-stack-section-parallax";
 const TechStackSection = () => {
   return (
     <section
-      className="relative mt-8 flex h-auto w-full flex-col overflow-hidden pb-28 pt-0 md:-mt-40 lg:mt-0 lg:pt-6 xl:pt-28 2xl:pt-0"
+      className="relative mt-40 flex h-auto w-full flex-col overflow-hidden pb-28 pt-0 md:mt-40 lg:mt-0 lg:pt-6 xl:pt-48 2xl:pt-40 3xl:pt-48"
       id="tech-stack"
     >
       <div className="z-10 mx-auto flex max-w-[1536px] flex-col gap-6 px-6 md:px-14 xl:px-[13.5rem]">
@@ -24,10 +24,10 @@ const TechStackSection = () => {
         />
       </div>
 
-      <div className="absolute bottom-[40%] right-5 z-[-1] rotate-[90deg] md:bottom-[45%] md:right-[20%] 2xl:bottom-[50%] 2xl:right-[25%]">
+      <div className="absolute bottom-[40%] right-5 z-[-1] rotate-[90deg] md:bottom-[45%] md:right-[20%] 2xl:bottom-[35%] 2xl:right-[15%]">
         <TechStackScribbleSvg className="scale-[170%]" />
       </div>
-      <div className="mt-20 xl:mt-28 2xl:mt-40">
+      <div className="mt-20 xl:mt-28">
         <TechStackParallax />
       </div>
     </section>

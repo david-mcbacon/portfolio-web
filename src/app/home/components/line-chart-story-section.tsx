@@ -3,6 +3,7 @@ import { useRef } from "react";
 import Heading from "@/core/heading";
 import { useScroll } from "framer-motion";
 import dynamic from "next/dynamic";
+import { cn } from "@/core/generic/cn";
 const LineChart = dynamic(() => import("@/components/ui-david/line-chart"), {
   ssr: false,
 });
@@ -15,7 +16,7 @@ const LineChartStorySection = () => {
   });
 
   return (
-    <section className="xl:px-[13.5rem]m mx-auto flex w-full max-w-[1536px] flex-col gap-20 px-6 md:-mt-40 md:flex-row md:gap-6 md:px-14 lg:mt-0 lg:gap-10">
+    <section className="mx-auto flex w-full max-w-[1536px] flex-col gap-20 px-6 md:-mt-20 md:flex-row md:gap-6 md:px-14 lg:mt-0 lg:gap-10 xl:px-[13.5rem]">
       <div className="sticky top-0 flex h-screen w-full items-start justify-center md:top-0 md:w-[60%] md:items-center lg:w-2/3">
         <div className="relative h-auto w-full bg-gradient-to-b from-background from-80% to-transparent pb-32 pt-12 md:w-[700px] md:pt-0">
           <LineChart
@@ -38,8 +39,8 @@ const LineChartStorySection = () => {
       </div>
       <div className="w-full pb-28 md:w-1/3 md:pb-0" ref={animationRefDiv}>
         <div className="-mt-[400px] h-auto w-full space-y-36 md:mt-[25vh] md:space-y-20">
-          {storyLine.map((story) => (
-            <StoryLineItem key={story.year} story={story} />
+          {storyLine.map((story, index) => (
+            <StoryLineItem key={story.year} story={story} index={index} />
           ))}
         </div>
       </div>
@@ -49,15 +50,22 @@ const LineChartStorySection = () => {
 
 const StoryLineItem = ({
   story,
+  index,
 }: {
   story: {
     year: string;
     title: string;
     descrtiption: string;
   };
+  index: number;
 }) => {
   return (
-    <div className="h-fit md:h-[90vh] xl:pr-28">
+    <div
+      className={cn(
+        "h-fit md:h-[90vh] 2xl:pr-28",
+        index === 4 && "2xl:pt-10 3xl:pt-28",
+      )}
+    >
       <p className="flex h-12 items-center justify-start border-l border-primary pl-4 text-3xl uppercase tracking-wide">
         {story.year}
       </p>

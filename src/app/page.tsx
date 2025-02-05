@@ -11,16 +11,16 @@ import TopNavigation from "@/components/ui-david/top-navigation";
 
 export default function Home() {
   return (
-    <main className="min-h-screen w-full">
+    <main className="min-h-screen w-screen">
       <TopNavigation />
       <HeroSection />
       <AboutSection />
-      <WorkSection />
+      <RecentProjectsSection />
       <ExperienceSection />
       <TimelineSection />
       <LineChartStorySection />
+      <WorkSection />
       <TechStackSection />
-      <RecentProjectsSection />
       <ContactSection />
     </main>
   );
