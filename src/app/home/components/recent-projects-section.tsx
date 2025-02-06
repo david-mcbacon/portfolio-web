@@ -134,7 +134,7 @@ const PROJECTS: Project[] = [
   {
     title: "Components Library",
     type: "Custom Code Components for Framer • React • TypeScript",
-    client: "Bachoff Studio",
+    client: "Framer",
     description:
       "An ever-growing library of custom code components for Framer, offering functionality that can't be achieved with native no-code tools.",
     links: [
@@ -171,8 +171,8 @@ const PROJECTS: Project[] = [
     ],
   },
   {
-    title: "P2E Runner Game",
-    type: "Game • React • TypeScript • Framer • Canvas API",
+    title: "P2E Game & Admin",
+    type: "Game • React • Next.js • TypeScript • API • Postgres",
     client: "Degen Zoo Club",
     description:
       "A play-to-earn game with a custom-coded game engine, public leaderboard, authentication, wallet integration, a Telegram bot, an admin dashboard, and more.",
@@ -191,19 +191,32 @@ const PROJECTS: Project[] = [
   //   description:
   //     "I am redesigning the website for a local car repair service, to replace their outdated, non-mobile-friendly site. The new site will be modern, mobile-responsive, and SEO-optimized, ensuring a fresh and user-friendly online presence.",
   // },
+  // {
+  //   title: "Multi-app sync",
+  //   client: "Kontentino",
+  //   type: "Integrations • Data Pipelines • Python • Prefect",
+  //   description:
+  //     "Data pipelines for 3rd-party apps like Heap, Intercom, Userpilot, and Velaris, ensuring seamless data synchronization and accuracy across platforms.",
+  // },
   {
-    title: "Multi-app sync",
-    client: "Kontentino",
-    type: "Integrations • Data Pipelines • Python • Prefect",
+    title: "Framer Plugin",
+    type: "Stop Overscrolling • React • TypeScript • Vite",
+    client: "Framer",
     description:
-      "Data pipelines for 3rd-party apps like Heap, Intercom, Userpilot, and Velaris, ensuring seamless data synchronization and accuracy across platforms.",
+      "A Framer plugin for eliminating unwanted page bounce in Framer sites. One-click solution to lock pages in place.",
+    links: [
+      {
+        title: "Framer Plugin",
+        url: "https://www.framer.com/marketplace/plugins/stop-overscrolling/",
+      },
+    ],
   },
   {
     title: "3D Playground",
     client: "Bachoff Studio",
-    type: "My Playground for 3D Experiments • Three.js • R3F",
+    type: "Showcase of my 3D Experiments • Three.js • R3F",
     description:
-      "A playground and showroom for my 3D experiments, where I explore and test new ideas.",
+      "A playground and showcase for my 3D experiments, where I explore and test new ideas.",
     links: [
       {
         title: "3D Playground",
